@@ -6,7 +6,7 @@ use hex;                    //hex encoding
 
 fn main() -> io::Result<()> {
     let args: Vec<String> = env::args().collect();  //Collect args into a vector
-    if args.len() != 2 {                            //Expects 1 arg
+    if args.len() != 2 {                            //Expects 1 argument
         eprintln!("Usage: {} <file_path>", args[0]);
         std::process::exit(1);                      //Error handling
     } 
